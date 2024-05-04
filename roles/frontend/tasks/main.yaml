@@ -10,10 +10,10 @@
     enabled: yes
 
 - name: run app pre-requisites
-  ansible.builtin.import-role:
+  ansible.builtin.import_role:
     name: common
-    tasks_from: app-pre-req.yaml
-    
+    tasks_from: app-pre-req
+
 # - name: delete default website
 #   ansible.builtin.file:
 #     path: /usr/share/nginx/html
